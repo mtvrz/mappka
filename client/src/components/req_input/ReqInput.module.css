@@ -1,0 +1,32 @@
+.headerInput{
+margin-bottom: 33px;
+}
+.textInput{
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Saira', sans-serif;
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border-radius: 0.2em;
+    margin-bottom: 20px;
+}
+.textInput:focus{
+   font-size: smaller;
+    color: black;
+
+}
+.textInput:disabled{
+background-color: #e1e1e1;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px
+}
+.checkbox{
+color: #9f3fee;
+}

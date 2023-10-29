@@ -1,0 +1,101 @@
+.main{
+    margin-top: 20px;
+    background-color: #ffffff;
+    width: 40%;
+    height: 50px;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border-radius: 0.2em;
+    transition: 0.3s;
+    font-family: 'Saira', sans-serif;
+    font-size: large;
+    font-weight: normal;
+}
+.main:hover{
+    cursor: pointer;
+    background-color: #9f3fee;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.main:active{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    transition: 0s;
+}
+
+.action{
+    margin-top: 2px;
+    background-color: #ffffff;
+    width: 85%;
+    height: 70px;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border-radius: 0.1em;
+    transition: 0.3s;
+    font-family: 'Saira', sans-serif;
+    font-size: large;
+    font-weight: normal;
+}
+.action:hover{
+    cursor: pointer;
+    background-color: #9f3fee;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.action:active{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    transition: 0s;
+}
+.text{
+    font-size: smaller;
+    font-weight: bolder;
+}
+.action:disabled{
+    background-color: #e1e1e1;
+}
+.action:disabled:hover{
+    cursor: default;
+    background-color: #e1e1e1;
+    color: darkgray;
+    font-size: large;
+    font-weight: normal;
+}
+
+.side{
+    margin-top: 2px;
+    background-color: #efefef;
+    width: 85%;
+    height: 70px;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border-radius: 0.1em;
+    transition: 0.3s;
+    font-family: 'Saira', sans-serif;
+    font-size: large;
+    font-weight: normal;
+}
+.side:hover{
+    cursor: pointer;
+    background-color: #9f3fee;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.side:active{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    transition: 0s;
+}
+.side:disabled{
+    background-color: #e1e1e1;
+}
+.side:disabled:hover{
+    cursor: default;
+    background-color: #e1e1e1;
+    color: darkgray;
+    font-size: large;
+    font-weight: normal;
+}

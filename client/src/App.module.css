@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Indie+Flower&family=Kalam:wght@300&family=Saira:wght@100&display=swap');
+/*
+    font-family: 'Caveat', cursive; --- HEADER TEXT
+    font-family: 'Indie Flower', cursive; --- HEADER TEXT
+    font-family: 'Amatic SC', sans-serif; --- HANDwrite TEXT
+    font-family: 'Kalam', cursive; --- HEADER TEXT
+    font-family: 'Saira', sans-serif; ---PLAIN TEXT
+*/
+
+.App {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: 'Saira', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.clr{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #e1e1e1;
+  z-index: -100;
+}
+

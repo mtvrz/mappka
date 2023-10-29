@@ -1,0 +1,13 @@
+.main{
+    position: absolute;
+
+    z-index: 10;
+    left: 20px;
+    width: 140px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}

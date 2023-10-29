@@ -1,0 +1,23 @@
+.body {
+    position: fixed;
+    width: 30%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: 10px;
+    bottom: 0;
+    right: 0;
+}
+.title{
+    position:relative;
+    margin-left: auto;
+    margin-right: 20%;
+    font-size: 65px;
+    font-family: 'Caveat', cursive;
+    opacity: 0.3;
+}
+.title h1{
+color: #bdbdbd;
+}
+.title sup{
+color: #9f3fee;
+}
