@@ -16,30 +16,8 @@ const Risks = (props) => {
     }
 
     const set_active_handler = (x) => {
-        for(let e; e<riskArray.length;e++){
-            riskArray.splice(e,0,
-            {
-            }
-            )
-        }
-//___________________
-        console.log(x)
-        riskArray.splice(1,1,
-            {
-                risk: {
-                    verzeRizika: "ID4",
-                    typ: "ZP",
-                    typPlneni: "PC",
-                    PC: 100,
-                    VEK: 60
-                },
-                id: 3,
-                changeEvent: [],
-                isActive: true
-            })
-        console.log(riskArray)
-
-        setRiskArray([...riskArray])
+        console.log("changing active ID to ", x)
+        setData({...data,screen:{...data.screen,activeID:x}})
     }
 
 
@@ -49,9 +27,9 @@ const Risks = (props) => {
     return <div className={classes.main}>
         <RiskHeader/>
         <div className={classes.risks}>
-            {riskArray.map((x) => {
+            {data.risks.map((x) => {
                 return <Risk key={x.id} ID={x.id} riskValues={x.risk} changeEvent={x.changeEvent}
-                             update={update_risk_handler} isActive={x.isActive} activeID={}/>
+                             update={update_risk_handler} isActive={x.isActive} activeID={data.screen.activeID} changeActive={set_active_handler}/>
             })}
         </div>
         <ButtonF type={riskPage.button.type} name={riskPage.button.name.toUpperCase()}

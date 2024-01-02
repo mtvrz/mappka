@@ -9,13 +9,11 @@ export const riskSet = [
     {
         risk:riziko,
         id:1,
-        changeEvent: [],
-        isActive: false
+        changeEvent: []
     },
     {
         risk:riziko,
         id:2,
-        changeEvent: [],
-        isActive: false
+        changeEvent: []
     }
 ]

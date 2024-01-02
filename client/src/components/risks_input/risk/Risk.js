@@ -6,16 +6,9 @@ const Risk = (props) => {
 
     const [values, setValues] = useState(props.riskValues)
     const [changeEv, setChangeEv] = useState(props.changeEvent)
-    const [isActive, setIsActive] = useState(props.isActive)
 
     const setActiveHandler = () => {
-        if (isActive === true) {
-            setIsActive(false)
-        }
-        else{
-            setIsActive(true)
-        }
-
+        props.activeID !== props.ID? props.changeActive(props.ID): props.changeActive(0)
         //setIsActive(isActive === true ? false : true)
         //console.log(props.ID)
     }
@@ -24,10 +17,11 @@ const Risk = (props) => {
         setChangeEv(x)
         console.log("")
     }
+
     const XY = <div className={classes.activeBox}><AddEvent actionObject={changeEv} updateObject={setChangeEvHandler}/></div>
 
     return <div
-        className={`${classes.main} ${isActive === true ? classes.active : classes.nonactive}`}>
+        className={`${classes.main} ${props.activeID === props.ID? classes.active : classes.nonactive}`}>
         <div className={`${classes.row} ${props.ID % 2 === 0 ? classes.rowOdd : classes.rowEven}`}
              onClick={setActiveHandler}>
             <div>{values.verzeRizika}</div>
@@ -36,7 +30,7 @@ const Risk = (props) => {
             <div><s>{values.VEK}</s> {values.VEK}</div>
            <div><s>{values.PC}</s> {values.PC}</div>
         </div>
-        {isActive && XY}
+        {props.activeID === props.ID?<div className={classes.activeBox}><AddEvent actionObject={changeEv} updateObject={setChangeEvHandler}/></div>:null}
     </div>
 }
 export default Risk

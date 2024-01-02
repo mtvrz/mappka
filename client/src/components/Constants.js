@@ -1,11 +1,12 @@
 import {riskSet} from "./risks_input/data_for_test";
 
 export const dataModel = {
-    isTestButtonVisible: true,
+    isTestButtonVisible: false,
     isSideBarVisible:false,
     isGenerateButtonEnabled:true,
     screen:{
-        stepID:2
+        stepID:2,
+        activeID:0
     },
     risks:riskSet
 }
