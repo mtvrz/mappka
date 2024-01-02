@@ -1,0 +1,18 @@
+.main{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.textInput{
+    width: 60%;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Saira', sans-serif;
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border-radius: 0.2em;
+}

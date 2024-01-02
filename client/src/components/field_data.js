@@ -59,3 +59,13 @@ export const sideBar = [
     }
 
 ]
+export const riskPage = {
+    button: {
+        name: "generate",
+        subname: "",
+        enableSubname: false,
+        type: 4,
+
+    },
+    risk:{}
+}

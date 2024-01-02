@@ -5,10 +5,11 @@ import ReqInput from "./components/req_input/ReqInput";
 import Loader from "./components/UI/Loader/Loader";
 import Sidebar from "./components/sidebar/Sidebar";
 import {dataModel} from "./components/Constants";
+import Risks from "./components/risks_input/Risks";
+import Copy_page from "./components/copy_page/Copy_page";
 
 const Layer_main = (props) =>{
     const [data, setData] = useState(dataModel)
-
 
     const stepChangeHandler = (x) =>{
         console.log("stepChangeHandler",data.screen.stepID,">",x.screen.stepID)
@@ -26,14 +27,16 @@ const Layer_main = (props) =>{
 
 
     return <Fragment>
-        <Sidebar action={useStepperHandler} data={data}/>
+        {data.isSideBarVisible && <Sidebar action={useStepperHandler} data={data}/>}
         <Form step={data.screen.stepID}>
-            {data.screen.stepID === 0? <ReqInput next={stepChangeHandler} data={data} form={1}/>:
-                data.screen.stepID === 1?<Action_input next={stepChangeHandler} data={data} form={1}/>:
-                    <Loader/>
+            {data.screen.stepID === 0? <ReqInput next={stepChangeHandler} data={data}/>:
+                data.screen.stepID === 1?<Action_input next={stepChangeHandler} data={data} />:
+                    data.screen.stepID === 2? <Risks data={data} />:
+                        data.screen.stepID === 3? <Copy_page/>:
+                        <Loader/>
             }
         </Form>
-        <button onClick={test}>test</button>
+        {data.isTestButtonVisible && <button onClick={test}>test</button>}
     </Fragment>
 }
 

@@ -1,0 +1,33 @@
+.mainBar{
+    width: 40%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 0.3em;
+}
+.textInputForAc{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Saira', sans-serif;
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border-radius: 0.2em;
+}
+
+.selectInputForAc{
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    font-size: small;
+    font-family: 'Saira', sans-serif;
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border-radius: 0.2em;
+}

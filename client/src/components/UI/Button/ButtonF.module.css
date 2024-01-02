@@ -99,3 +99,110 @@
     font-size: large;
     font-weight: normal;
 }
+
+
+.gen{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    width: 17%;
+    height: 50px;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border-radius: 0.1em;
+    transition: 0.3s;
+    font-family: 'Saira', sans-serif;
+    font-size: large;
+    font-weight: normal;
+}
+.gen:hover{
+    cursor: pointer;
+    background-color: #9f3fee;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.gen:active{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    transition: 0s;
+}
+.gen:disabled{
+    background-color: #e1e1e1;
+    border: none;
+}
+.gen:disabled:hover{
+    cursor: default;
+    background-color: #e1e1e1;
+    color: darkgray;
+    font-size: large;
+    font-weight: normal;
+}
+
+.addEvent{
+
+    background-color: transparent;
+    width: 5%;
+    height: 40px;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border: none;
+    border-radius: 0.9em;
+    transition: 0.3s;
+    font-family: 'Saira', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+.addEvent:hover{
+    cursor: pointer;
+    background-color: #9f3fee;
+    color: white;
+    font-weight: bolder;
+}
+.addEvent:active{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    transition: 0s;
+}
+.addEvent:disabled{
+    background-color: #e1e1e1;
+}
+.addEvent:disabled:hover{
+    cursor: default;
+    background-color: #e1e1e1;
+    color: darkgray;
+    font-size: large;
+    font-weight: normal;
+}
+
+.delEvent{
+    background-color: transparent;
+    width: 10%;
+    height: 35px;
+    border: 1px solid rgba(147, 143, 152, 0.45);
+    border: none;
+    border-radius: 0.1em;
+    transition: 0.3s;
+    font-family: 'Saira', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+.delEvent:hover{
+    cursor: pointer;
+    color: #9f3fee;
+    font-weight: bolder;
+}
+.delEvent:active{
+    cursor: pointer;
+    color: black;
+    transition: 0s;
+}
+.delEvent:disabled{
+    background-color: transparent;
+}
+.delEvent:disabled:hover{
+    cursor: default;
+    color: lightgray;
+    font-size: larger;
+    font-weight: bolder;
+}

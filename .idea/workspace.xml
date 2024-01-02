@@ -41,11 +41,13 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components/risks_input/risk/event" />
       <recent name="$PROJECT_DIR$/client/src/components/UI/Loader" />
     </key>
   </component>
@@ -59,7 +61,8 @@
       <updated>1696940307643</updated>
       <workItem from="1696940308763" duration="4175000" />
       <workItem from="1697027094767" duration="9135000" />
-      <workItem from="1697618638782" duration="61205000" />
+      <workItem from="1697618638782" duration="159426000" />
+      <workItem from="1704183362288" duration="3421000" />
     </task>
     <servers />
   </component>
