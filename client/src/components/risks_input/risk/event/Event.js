@@ -12,14 +12,14 @@ const Event = (props)=>{
         props.delete(props.ID)
     }
     const updateHandler_action = (event) =>{
-        //console.log("zapisuji: Akce ID:", event.target.value)
+        console.log("zapisuji: Akce ID:", event.target.value)
         setAction(event.target.value)
-        //props.update(props.ID,event.target.value, value)
+        props.update(props.ID,event.target.value, 1)
     }
     const updateHandler_value = (event) =>{
         //console.log("zapisuji: Akce Value:", event.target.value)
         setValue(event.target.value)
-        props.update(props.ID,action,event.target.value)
+        props.update(props.ID,event.target.value,2)
     }
 
     return <div className={classes.mainBar}>
@@ -30,7 +30,7 @@ const Event = (props)=>{
             })}
         </select>
         <input className={classes.textInputForAc} type={"text"} onChange={updateHandler_value} defaultValue={value}/>
-        <ButtonF type={6} action={deleteHandler} name={"x"} isSubnameEnabled={false}/>
+        <ButtonF type={6} action={deleteHandler} name={"x"} isSubnameEnabled={false} isDisabled={true}/>
     </div>
 }
 export default Event

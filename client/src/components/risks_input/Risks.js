@@ -16,12 +16,12 @@ const Risks = (props) => {
     }
 
     const set_active_handler = (x) => {
-        console.log("changing active ID to ", x)
+        //console.log("changing active ID to ", x)
         setData({...data,screen:{...data.screen,activeID:x}})
     }
 
 
-    const update_risk_handler = (id, value) => {
+    const update_risk_handler = (riskID, value) => {
 
     }
     return <div className={classes.main}>

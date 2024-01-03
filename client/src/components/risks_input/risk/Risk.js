@@ -5,20 +5,16 @@ import AddEvent from "./event/AddEvent";
 const Risk = (props) => {
 
     const [values, setValues] = useState(props.riskValues)
-    const [changeEv, setChangeEv] = useState(props.changeEvent)
 
     const setActiveHandler = () => {
         props.activeID !== props.ID? props.changeActive(props.ID): props.changeActive(0)
         //setIsActive(isActive === true ? false : true)
         //console.log(props.ID)
     }
-    const setChangeEvHandler = (x) => {
-        console.log("Risk.js přijíma: ",x)
-        setChangeEv(x)
-        console.log("")
-    }
+    const setChangeEvHandler = (id, value, route) => {
+        console.log(props.ID,"Risk.js přijíma: ",id, value, route)
 
-    const XY = <div className={classes.activeBox}><AddEvent actionObject={changeEv} updateObject={setChangeEvHandler}/></div>
+    }
 
     return <div
         className={`${classes.main} ${props.activeID === props.ID? classes.active : classes.nonactive}`}>
@@ -30,7 +26,7 @@ const Risk = (props) => {
             <div><s>{values.VEK}</s> {values.VEK}</div>
            <div><s>{values.PC}</s> {values.PC}</div>
         </div>
-        {props.activeID === props.ID?<div className={classes.activeBox}><AddEvent actionObject={changeEv} updateObject={setChangeEvHandler}/></div>:null}
+        {props.activeID === props.ID?<div className={classes.activeBox}><AddEvent actionObject={props.changeEvent} updateObject={setChangeEvHandler}/></div>:null}
     </div>
 }
 export default Risk

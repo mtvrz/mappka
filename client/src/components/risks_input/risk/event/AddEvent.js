@@ -13,13 +13,14 @@ const AddEvent = (props) => {
         final_value_for_action: Skript-friendly část
     }
      */
-    const [acts, setActs] = useState(props.actionObject)
-    const [counter, setCount] = useState(0)
+    const [acts, setActs] = useState(props.actionObject.eventField)
+    const [counter, setCount] = useState(props.actionObject.counter)
     const addEventHandler = () => {
     }
     const deleteValue = (idX) => {
     }
-    const setValue = (id, actionID, actionValue) => {
+    const setValue = (id, value, route) => {
+        props.updateObject(id, value, route)
     }
     useEffect(()=>{
     },[])
